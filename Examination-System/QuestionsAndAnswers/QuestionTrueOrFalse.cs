@@ -8,16 +8,13 @@ namespace Examination_System.QuestionsAndAnswers
 {
     internal class QuestionTrueOrFalse : Question
     {
-        
-        public QuestionTrueOrFalse() : base()
+        // Constructor chaining
+        public QuestionTrueOrFalse() : base("True or False question", "", 0)
         {
-            Header = $"Choose either True or False.";
-            
-        }
-        public QuestionTrueOrFalse(string header, string body, int marks) : base(header, body, marks)
-        {
-            
         }
 
+        public QuestionTrueOrFalse(string header, string body, int marks) : base(header, body, marks)
+        {
+        }
     }
 }
